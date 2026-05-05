@@ -66,14 +66,6 @@ Includes confirmed exoplanets with attributes such as:
 
 ---
 
-## 📊 Dashboard
-
-![Dashboard](dashboard/tableau_dashboard.png)
-
-This dashboard combines all visualizations to provide an interactive overview of exoplanet patterns.
-
----
-
 ## 🧠 Key Insights
 
 * Planet size does not strongly correlate with orbital period
