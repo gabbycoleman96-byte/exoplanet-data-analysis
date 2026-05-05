@@ -2,9 +2,12 @@
 
 ## 🚀 Overview
 
-This project explores patterns in confirmed exoplanets using data from NASA.
+This project analyzes confirmed exoplanet data from NASA to uncover patterns in planetary size, orbital behavior, and host star characteristics.
 
-Using SQL and Tableau, I analyzed how planetary size relates to orbital behavior and host star characteristics, uncovering trends in planetary formation and observational bias.
+Using MySQL for data preparation and Tableau for visualization, the analysis explores how planetary systems vary and highlights key trends influenced by both astrophysical factors and observational bias.
+
+This project simulates a real-world data analysis workflow, from raw data cleaning to insight generation and visualization.
+
 
 ---
 
@@ -18,7 +21,7 @@ Using SQL and Tableau, I analyzed how planetary size relates to orbital behavior
 
 ---
 
-## 🧰 Tools Used
+## 🧰 Tools and Technologies
 
 * MySQL (data cleaning & transformation)
 * Tableau (data visualization & dashboard design)
@@ -100,10 +103,12 @@ SET star_type =
 
 ## 🧠 Key Insights
 
-* Planet size does not strongly correlate with orbital period
-* Exoplanets cluster into two main groups: rocky planets and gas giants
-* Star temperature shows a stronger relationship with planet size
-* Detection bias likely influences observed distributions
+* Planet size shows little to no strong correlation with orbital period
+* Exoplanets cluster into two primary groups: smaller rocky planets and larger gas giants
+* Hot stars tend to host larger planets on average, though this may reflect distribution differences rather than uniform growth
+* Short orbital period planets are overrepresented, likely due to observational detection bias
+
+These findings suggest that while orbital mechanics alone do not strongly determine planet size, host star characteristics and detection methods play a significant role in shaping observed exoplanet distributions.
 
 ---
 
