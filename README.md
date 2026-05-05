@@ -1,10 +1,20 @@
 # 🌌 Exoplanet Data Analysis (SQL + Tableau)
 
-## 📊 Project Overview
+## 🚀 Overview
 
-This project analyzes exoplanet data from NASA to explore relationships between planetary size, orbital behavior, and host star characteristics.
+This project explores patterns in confirmed exoplanets using data from NASA.
 
-The goal was to simulate a real-world data analysis workflow using SQL for data preparation and Tableau for visualization.
+Using SQL and Tableau, I analyzed how planetary size relates to orbital behavior and host star characteristics, uncovering trends in planetary formation and observational bias.
+
+---
+
+## 🎯 Key Findings
+
+* Planet size shows little correlation with orbital period
+* Exoplanets cluster into two main groups: small rocky planets and large gas giants
+* Hot stars tend to host larger planets on average
+* Short orbital period planets are overrepresented, likely due to detection bias
+
 
 ---
 
@@ -25,6 +35,28 @@ Includes confirmed exoplanets with attributes such as:
 * Orbital period
 * Star temperature
 * Distance from Earth
+
+---
+
+## 🧹 Data Preparation (SQL)
+
+The dataset was cleaned and transformed using MySQL:
+
+* Removed incomplete records
+* Filtered out extreme outliers
+* Created derived feature: `star_type` based on star temperature
+
+Example transformation:
+
+```sql
+UPDATE exoplanets
+SET star_type = 
+    CASE 
+        WHEN star_temperature < 4000 THEN 'Cool'
+        WHEN star_temperature BETWEEN 4000 AND 6000 THEN 'Medium'
+        ELSE 'Hot'
+    END;
+```
 
 ---
 
@@ -84,8 +116,10 @@ Includes confirmed exoplanets with attributes such as:
 
 ---
 
-## 🔗 Future Improvements
+## 💡 Skills Demonstrated
 
-* Incorporate habitability zone analysis
-* Add more statistical modeling (correlation coefficients, regression)
-* Expand dataset to include additional astronomical variables
+* SQL data cleaning and transformation
+* Exploratory data analysis
+* Data visualization with Tableau
+* Analytical thinking and insight communication
+
